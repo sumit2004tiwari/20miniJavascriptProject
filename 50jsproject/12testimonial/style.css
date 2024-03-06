@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+.container{
+    text-align: center;
+    border: 2px solid red;
+    background-color: gray;
+
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 26px;
+}
+#fpara{
+    margin-top: 140px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+#image{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -3.5%;
+}

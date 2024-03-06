@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    background-color: burlywood;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    width:fit-content;
+    margin-left: 85vb;
+    border-radius: 12px;
+    box-shadow: 0 0 0 3px rgb(70, 69, 69);
+}
+#qr-input{
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    margin-left: 14px;
+}   
+#qr-button{
+    font-size: 30px;
+    background-color: rgb(14, 197, 11);
+    border-radius: 10px;
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#qr-image{
+   margin-left: 110px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+}

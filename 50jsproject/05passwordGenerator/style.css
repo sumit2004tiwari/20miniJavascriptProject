@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: antiquewhite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30vh;
+   
+}
+.container{
+    background-color: white;
+    width: 20rem;
+    border-radius: 15px;
+  
+}
+.header{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(57, 57, 207);
+    margin-bottom: 13px;
+    height: 3rem;
+    width: 100%;
+    border-radius: 15px;
+}
+.head{
+   
+}
+.copy-btn{
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+.copy-btn:hover{
+    background-color: rgb(81, 197, 81);
+}
+.display{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.length{
+    margin-bottom: 20px;
+}
+.uppercase{
+    margin-bottom: 20px;
+}
+.lowercase{
+    margin-bottom: 20px;
+}
+.number{
+    margin-bottom: 20px;
+}
+.specialCharacter{
+    margin-bottom: 20px;
+}
+.checkbox{
+    cursor: pointer;
+}
+#create{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(57, 57, 207);
+    
+    height: 3rem;
+    width: 100%;
+    border-radius: 15px;
+}

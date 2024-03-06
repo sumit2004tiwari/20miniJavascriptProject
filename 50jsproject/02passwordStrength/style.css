@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+#password{
+    font-size: 50px;
+    color: white;
+    background-color: rgb(179, 175, 175);
+    border: 2px solid rgb(17, 213, 17);
+    border-radius: 10px;
+    box-shadow: 5px 5px  5px red;
+    display: block;
+
+}
+#output{
+    font-size: 30px;
+}

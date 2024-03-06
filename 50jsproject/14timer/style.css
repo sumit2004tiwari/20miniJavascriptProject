@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+
+}
+.container{
+    background-color: cadetblue;
+    width: 35%;
+    height: 15rem;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 35px;
+}
+#user{
+    font-size: 70px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: rgb(241, 167, 180);
+}
+button{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(57, 57, 207);
+    height: 3rem;
+    width: 90px;
+    border-radius: 15px;
+    margin-top: 20px;
+    
+}
+#btn{
+    display: flex;
+    justify-content: space-around;
+   
+}
