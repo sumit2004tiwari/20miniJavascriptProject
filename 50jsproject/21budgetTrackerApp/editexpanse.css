@@ -1,0 +1,56 @@
+.editModal{
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 10%;
+    left:13%;
+    width: 100%;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    text-align: center;
+    padding: 20px;
+}
+#editid{
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-color: gray;
+    margin-bottom: 80px;
+   }
+   #editid::placeholder{
+    color: white;
+   }
+#editCate{
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    background-color: gray;
+    margin-bottom: 90px;
+} 
+#editCate::placeholder{
+    color: white;
+}  
+#editbtn{
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    background-color: gray;
+    margin-bottom: 150px;
+}
+#editbtn:hover{
+    background-color: rgb(19, 185, 19);
+}
