@@ -1,0 +1,7 @@
+// // Calculate remaining budget
+//     expense.textContent = "$0";
+//     let final = inputValue - parseFloat(expense.textContent);
+//     remain.innerHTML = `$ ${parseInt(final)}`;
+//     // find the reamining budget and display 
+//     let remainBudget = inputValue - sum;
+//     console.log("reamin budget : " + parseInt(remainBudget));

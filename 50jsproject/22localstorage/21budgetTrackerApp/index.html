@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="editexpanse.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+
+
+</head>
+<body>
+    
+
+<nav class="bg-white border-gray-100 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Expanse Tracker</span>
+    <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        
+        <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4    md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+       <li id="trans">
+        <button id="google_translate"></button>
+       </li> 
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+  
+    <div class="document">
+        
+        <div class="main">
+            <div class="container " id="atm">
+                <div class="box budget show" id="budget1">
+                    <h2>Budget</h2>
+                    <p id="bud">select budget</p>
+                </div>
+                <div class="box remaining-budget">
+                    <h2>Remaining Budget</h2>
+                    <p id="remain">0</p>
+                </div>
+                <div class="box expenses">
+                    <h2>Expenses</h2>
+                    <p id="expense">$00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container userfield">
+           
+            <div class="nextcontain">
+                <div class="field">
+                    <input type="text"  placeholder="Enter your expenses in $" id="enter-expanse" />
+                </div>
+                <div class="categary">
+                    <input  type="text" id="otherText" class="newInput"  placeholder="enter new category" length="20">
+                    <label for="expenses" id="selection"> Category:</label>
+                    <select id="expenses" name="categories">
+                        <option value="select" class="selection " id="default">Select</option>
+                        <option value="Shopping" class="selection">Shopping</option>
+                        <option value="travelling" class="selection">Travelling </option>
+                        <option value="Groceries" class="selection">Groceries</option>
+                        <option value="Rent" class="selection">Rent</option>
+                        <option value="other" class="selection" id="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="submit-btn" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container items">
+            <div class="nextcontain items">
+                <label for="expenses" id="filter">Filter by Category:</label>
+                <select id="filterCategory" name="categories">
+                    <option value="select" class="selection">Select</option>
+                    <option value="Shopping" class="selection">Shopping</option>
+                    <option value="travelling" class="selection">Travelling</option>
+                    <option value="Groceries" class="selection">Groceries</option>
+                    <option value="Rent" class="selection">Rent</option>
+                    <option value="other" class="selection">Other</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button id="include">Filter</button>
+            </div>
+        </div>
+
+        <div class=" items">
+            <div>
+                <ul id="ul">
+                    <!-- <li></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!-- modal for list which is created by category -->
+     <div class=" items">
+        <div>
+            <ul id="ul ol ">
+                <!-- <li></li> -->
+                
+            </ul>
+        </div>
+    
+
+    <!-- pop message to update a budget box -->
+    <div class="modal" id="modal">
+        <div class="input">
+            <input type="number" placeholder="Enter your budget" id="inp" maxlength="10000" />
+        </div>
+        <div class="btn">
+            <button class="button" id="cancel">CANCEL</button>
+            <button class="button" id="update">UPDATE</button>
+        </div>
+    </div>
+    <!-- pop message to edit a list -->
+   <div class="editModal" id="edit">
+       <div class="editExpanse">
+           <input type="number" placeholder="enter budget number" id="editid" class="editable"/>
+       </div>
+       <div class="editcategory">
+        <input type="text" placeholder="enter category" id="editCate" class="editable"/>
+        </div>
+
+        <button id="editbtn" class="editbtn12">Submit</button>
+        
+    </div>
+
+
+   </div>
+
+    </div>
+</div>
+
+   
+
+   
+   
+
+
+</body>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">       
+ </script>
+
+<script src="script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
